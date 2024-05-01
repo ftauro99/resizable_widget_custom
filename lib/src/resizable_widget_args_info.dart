@@ -9,6 +9,8 @@ class ResizableWidgetArgsInfo {
   final double separatorSize;
   final Color separatorColor;
   final OnResizedFunc? onResized;
+  final bool shouldIncludeDot; // Add this line
+  final Color dotColor; // Add this line
 
   ResizableWidgetArgsInfo(ResizableWidget widget)
       : children = widget.children,
@@ -20,5 +22,7 @@ class ResizableWidgetArgsInfo {
         isDisabledSmartHide = widget.isDisabledSmartHide,
         separatorSize = widget.separatorSize,
         separatorColor = widget.separatorColor,
-        onResized = widget.onResized;
+        onResized = widget.onResized,
+        shouldIncludeDot = widget.shouldIncludeDot, // Add this line
+        dotColor = widget.dotColor; // Add this line
 }

@@ -27,12 +27,13 @@ class ResizableWidgetModel {
           originalChildren[i], originalPercentages[i]));
       children.add(ResizableWidgetChildData(
           separatorFactory.call(SeparatorArgsBasicInfo(
-            2 * i + 1,
-            _info.isHorizontalSeparator,
-            _info.isDisabledSmartHide,
-            _info.separatorSize,
-            _info.separatorColor,
-          )),
+              2 * i + 1,
+              _info.isHorizontalSeparator,
+              _info.isDisabledSmartHide,
+              _info.separatorSize,
+              _info.separatorColor,
+              _info.shouldIncludeDot,
+              _info.dotColor)),
           null));
     }
     children.add(ResizableWidgetChildData(

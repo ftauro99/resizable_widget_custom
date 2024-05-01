@@ -48,15 +48,20 @@ class ResizableWidget extends StatefulWidget {
   /// Note that [onResized] is called every frame when resizing [children].
   final OnResizedFunc? onResized;
 
+  final bool shouldIncludeDot; // Add this line
+  final Color dotColor; // Add this line
+
   /// Creates [ResizableWidget].
   ResizableWidget({
     Key? key,
     required this.children,
     this.percentages,
     @Deprecated('Use [isHorizontalSeparator] instead')
-        this.isColumnChildren = false,
+    this.isColumnChildren = false,
     this.isHorizontalSeparator = false,
     this.isDisabledSmartHide = false,
+    this.shouldIncludeDot = true,
+    this.dotColor = Colors.red,
     this.separatorSize = 4,
     this.separatorColor = Colors.white12,
     this.onResized,
