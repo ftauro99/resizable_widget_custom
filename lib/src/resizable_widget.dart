@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:resizable_widget/src/resizable_widget_args_info.dart';
+import 'package:resizable_widget_custom/src/resizable_widget_args_info.dart';
 import 'resizable_widget_child_data.dart';
 import 'resizable_widget_controller.dart';
 import 'separator.dart';
